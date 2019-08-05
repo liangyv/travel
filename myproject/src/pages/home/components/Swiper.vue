@@ -1,7 +1,7 @@
 <template>
     <div class="wrapper">
         <swiper :options="swiperOption">
-    <swiper-slide v-for="item of swiperList" :key="item.id">
+        <swiper-slide v-for="item of swiperList" :key="item.id">
         <img class="swiper-img" :src="item.imgUrl" alt="">
     </swiper-slide>
    
@@ -32,8 +32,6 @@ export default {
 }
 </script>
 <style lang="stylus" scoped>
-.wrapper>>> .swiper-pagination-bullet-active
-        background :red !important
 .wrapper
     width:100%
     height:0
