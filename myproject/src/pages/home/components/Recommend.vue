@@ -2,7 +2,7 @@
    <div>
       <div class="recommend-title">热销推荐</div>
       <ul>
-        <li class="item  border-bottom" v-for="(item,index) of recommendList" :key="index">
+        <li class="item  border-bottom" v-for="(item,index) of list" :key="index">
                 <img class="item-img" :src="item.imgUrl">
             <div class="item-info">
                 <p class="item-tiyle">{{item.title}}</p>
@@ -16,26 +16,8 @@
 <script>
 export default {
     name:"HomeRecommend",
-    data (){
-        return {
-            recommendList:[{
-                id:"0001",
-                imgUrl:"http://img1.qunarzz.com/sight/p0/201403/10/b0e7eeb18db9a7dc4f0376a13d4ab15d.jpg_200x200_3ff00ade.jpg",
-                title:"关中民俗艺术博物院",
-                desc:"关中民俗艺术博物院成人票（赠古风团扇）关中民俗艺术博物院成人票（赠古风团扇）"
-            },{
-                id:"0002",
-                imgUrl:"http://img1.qunarzz.com/sight/p0/201403/10/b0e7eeb18db9a7dc4f0376a13d4ab15d.jpg_200x200_3ff00ade.jpg",
-                title:"关中民俗艺术博物院",
-                desc:"关中民俗艺术博物院成人票（赠古风团扇）关中民俗艺术博物院成人票（赠古风团扇）"
-            },{
-                id:"0003",
-                imgUrl:"http://img1.qunarzz.com/sight/p0/201403/10/b0e7eeb18db9a7dc4f0376a13d4ab15d.jpg_200x200_3ff00ade.jpg",
-                title:"关中民俗艺术博物院",
-                desc:"关中民俗艺术博物院成人票（赠古风团扇）关中民俗艺术博物院成人票（赠古风团扇）"
-            },
-            ]
-        }
+    props:{
+        list:Array
     }
 }
 </script>
