@@ -37,6 +37,10 @@ export default {
     },
     activated(){
         window.addEventListener('scroll',this.handleScroll)
+    },
+    //离开详情页
+    deactivated(){
+        window.removeEventListener('scroll',this.handleScroll)
     }
 }
 </script>
