@@ -42,7 +42,7 @@ export default {
             
         }
     },
-    mounted(){
+    mounted (){
         this.getCityInfo()
     }
 }
